@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="col-md-6 card">
+    <table class="table table-light">
+      <thead class="thead bg-info">
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Name</th>
+          <th class="h4">Channel</th>
+          <th class="h4">Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of series">
+          <td><dd>{{s.id}}<dd></td>
+          <td><dd><a  href="#" class="serie-name">{{s.name}}</a></dd></td>
+          <td><dd>{{s.channel}}</dd></td>
+          <td><dd>{{s.seasons}}</dd></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="bg-white">
+          <td>Average seasons:</td>
+          <td>{{avgSeasons}}</td>
+          <td></td><td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
